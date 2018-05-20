@@ -21,9 +21,13 @@ int main(){
 	cout << student1.getNumber();
 	student2.setNumber(30); //Altera porque é um número válido, de acordo com a validação da função membro
 	cout << student2.getNumber();
-    //Student3.setNumber(10); //Porque dá erro?
+    //student3.setNumber(10); //Porque dá erro?
 	Student Student5("Pedro"); //outros parâmetros da função são os por omissão
 
+	cout << student1.getSetNumber();
+	cout << "After invoking a function which returns a reference... ";
+	student1.getSetNumber()=100;
+	cout << student1.getSetNumber() << endl;
 	cout << "Please verify the order by which all stdudents are destroyed...";
 	return 0;
 }
